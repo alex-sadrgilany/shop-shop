@@ -4,7 +4,6 @@ import { QUERY_CATEGORIES } from "../../utils/queries";
 import { useStoreContext } from "../../utils/GlobalState";
 import {
 	UPDATE_CATEGORIES,
-	UPDATE_PRODUCTS,
 	UPDATE_CURRENT_CATEGORY,
 } from "../../utils/actions";
 

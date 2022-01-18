@@ -24,7 +24,7 @@ function Detail() {
 
 	const { loading, data } = useQuery(QUERY_PRODUCTS);
 
-	const { products } = state;
+	const { products, cart } = state;
 
 	useEffect(() => {
 		if (products.length) {
@@ -48,8 +48,6 @@ function Detail() {
                 });
         }
 	}, [products, data, loading, dispatch, id]);
-
-    const { product, cart } = state;
 
     const addToCart = () => {
         const itemInCart = cart.find((cartItem) => cartItem._id === id);
